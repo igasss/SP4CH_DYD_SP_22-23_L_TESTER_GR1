@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
@@ -27,7 +27,7 @@ jobs:
     - name: Run tests
       run: |
         cd 'T9/Exchange rate'
-        set PYTHONPATH="${PYTHONPATH}:$(pwd)"
+        export PYTHONPATH="${PYTHONPATH}:$(pwd)"
         pytest tests/
         - name: Install SonarQube scanner
         run: |
