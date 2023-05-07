@@ -41,8 +41,8 @@ jobs:
         sonar-scanner \
           -Dsonar.projectKey='igasss_SP4CH_DYD_SP_22-23_L_TESTER_GR1' \
           -Dsonar.organization='igasss' \
-          -Dsonar.sources='Password Manager/app/' \
-          -Dsonar.tests='Password Manager/tests/' \
+          -Dsonar.sources='Exchange rate/app/' \
+          -Dsonar.tests='Exchange rate/tests/' \
           -Dsonar.python.coverage.reportPaths=coverage.xml \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=$SONAR_TOKEN
